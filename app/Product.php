@@ -9,4 +9,7 @@ class Product extends Model
     protected $table = 'products';
     protected $fillable = ['product_name', 'product_description', 'quantity', 'price', 'status'];
     
+    public function order(){
+        return $this->hasMany('App\Order');
+    }
 }
