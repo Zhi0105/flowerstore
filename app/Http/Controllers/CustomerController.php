@@ -26,7 +26,7 @@ class CustomerController extends Controller
             $rules = [
                 'first_name' => 'required',
                 'last_name' => 'required',
-                'email_address' => 'required',
+                'email_address' => 'required|email',
                 'mobile_number' => 'required',
                 'address' => 'required',
                 'status' => 'required'
@@ -65,7 +65,7 @@ class CustomerController extends Controller
             $rules = [
                 'first_name' => 'required',
                 'last_name' => 'required',
-                'email_address' => 'required',
+                'email_address' => 'required|email',
                 'mobile_number' => 'required',
                 'address' => 'required',
                 'status' => 'required'

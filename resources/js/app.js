@@ -18,6 +18,7 @@ import Customer from '../js/components/Customer';
 import Product from '../js/components/Product';
 import Order from '../js/components/Order';
 import AddProduct from '../js/components/add/AddProduct';
+import AddOrder from '../js/components/add/AddOrder';
 
 Vue.use(VueAxios, axios);
 
@@ -46,9 +47,14 @@ const routes = [
         name: '/add_product',
         path: '/add_product',
         component: AddProduct
+    }, 
+
+    {
+        name: '/add_order',
+        path: '/add_order',
+        component: AddOrder
     }
     
-
 
 ];
 

@@ -6,10 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+
+    protected $table = 'orders';
+    
     public function customer(){
-        return $this->belongsTo('App\Customer', 'foreign_key');
+        return $this->belongsTo('App\Customer');
     }
     public function product(){
-        return $this->belongsTo('App\Product', 'foreign_key');
+        return $this->belongsTo('App\Product');
     }
 }

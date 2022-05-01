@@ -53,8 +53,7 @@ export default {
                 price: '',
                 status: ''
             },
-            errors:[],
-            // success:[]             
+            errors:[]
         }
     },
     methods:{
@@ -65,8 +64,6 @@ export default {
                     .then((res) => {
                         console.log(res.data.data.message);
                         this.$router.push('Product');
-                    // this.success.push(res.data.data.message);
-
                     })
                     .catch((error) => {
                         let data = error.response.data.data.error;
