@@ -56,10 +56,13 @@ export default {
 
 <style scoped>
 .main {
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container{
+    margin-top:5%;
 }
 
 .header {
