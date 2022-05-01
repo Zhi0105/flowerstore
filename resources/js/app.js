@@ -15,6 +15,9 @@ import Vue from 'vue';
 // Components
 import Home from '../js/components/Home';
 import Customer from '../js/components/Customer';
+import Product from '../js/components/Product';
+import Order from '../js/components/Order';
+import AddProduct from '../js/components/add/AddProduct';
 
 Vue.use(VueAxios, axios);
 
@@ -28,7 +31,25 @@ const routes = [
         name: '/customer',
         path: '/customer',
         component: Customer
+    },
+    {
+        name: '/product',
+        path: '/product',
+        component: Product
+    },
+    {
+        name: '/order',
+        path: '/order',
+        component: Order
+    },
+    {
+        name: '/add_product',
+        path: '/add_product',
+        component: AddProduct
     }
+    
+
+
 ];
 
 

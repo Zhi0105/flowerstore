@@ -9,11 +9,17 @@
             <li class="nav-item">
                 <router-link class="nav-link" to="/customer">Customer</router-link>
             </li>
+            <li class="nav-item">
+                <router-link class="nav-link" to="/product">Products</router-link>
+            </li>
+            <li class="nav-item">
+                <router-link class="nav-link" to="/order">Orders</router-link>
+            </li>
+            
         </ul>
         </div>
     </div>
 </nav>
-
 </template>
 
 <script>

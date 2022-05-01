@@ -18,7 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
     // Customer routes
     Route::group(['prefix' => 'customers'], function(){
         Route::get('/', 'CustomerController@index')->name('customerList');
